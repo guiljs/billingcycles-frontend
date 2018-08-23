@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import MenuItem from './menuItem'
-import MenuTree from './menuTree'
+import MenuItem from './menuItem';
+import MenuTree from './menuTree';
 
 class Menu extends Component{
     render(){
@@ -13,6 +13,7 @@ class Menu extends Component{
         return(
             <ul className="sidebar-menu">
                 <MenuItem path='#/' label='Dashboard' icon='dashboard' />
+                <MenuItem path='#/dashboard2' label='Dashboard2 Sem Redux' icon='dashboard' />
                 <MenuTree label='Cadastro' icon='edit'>
                     <MenuItem path='#billingCycles' label='Ciclos de Pagamentos' icon='usd' />
                 </MenuTree>
