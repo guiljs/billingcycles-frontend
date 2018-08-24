@@ -1,7 +1,7 @@
-export function selectTab(tabId) {
-    console.log(tabId);
+export function selectTab(tabId) { //Usado lá no tabHeader.jsx
+    
     return {
-        type: 'TAB_SELECT',
+        type: 'TAB_SELECTED', //Tem que ser igual ao que o Reducer está ouvindo.
         payload: tabId
     }
 }
